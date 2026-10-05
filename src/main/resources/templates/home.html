@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+</head>
+<body>
+    th:replace="~{fragment/header :: header}"
+    <main>
+        <h1>Trang chủ UTEShop</h1>
+        <p>Xin chào <strong th:text="${#authentication.principal.fullName}">User</strong></p>
+    </main>
+</body>
+</html>
